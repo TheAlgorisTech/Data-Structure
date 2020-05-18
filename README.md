@@ -4,20 +4,11 @@ Changing the data structure does not change the correctness of the program, beca
 tradeoffs in the time to execute different operations, to improve
 the performance dramatically.
 
+### Contents
+__1. Containers__
 
-## Contiguous vs. Linked Data Structures
-- Contiguously-allocated structures are composed of single slabs of memory
-	- Arrays
-	- Matrices
-	- Heaps
-	- Hash tables
-- Linked data structures are composed of distinct chunks of memory bound together by pointer
-	- Lists
-	- Trees
-	- Graphs
-
-[//]:(algorist: "one skillful in reckonings or figuring")
-
+   1. [Stack](https://github.com/Fayssal404/Data-Sctructure/tree/master/Stacks)
+   2. [Queue](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue)
 
 
 
