@@ -9,16 +9,14 @@
 ![gif](https://i1.faceprep.in/Companies-1/queue-operations.gif)
 
 ### Contiguous & Linked Structure
-#### 1. [Contiguous Structure](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue/original-queue/contiguous-form)
-- Represented by:
-	- Array (Static or Dynamic)
-	- Head index
-	- Queue length
-#### 2. [Linked Structure](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue/original-queue/linked-form)
-- Represented by:
-	- Each node has one or more data fields (Imagine it as a box of data we need to store)
-	- Pointer field (to at least one other Node)
-	
+  
+  1. [__Contiguous Data Structure__](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue/original-queue/contiguous-form)
+  2. __Linked Data Structure__
+      
+      2.a [Simple Linked Structure](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue/original-queue/linked-form)
+      
+      2.b [Simple Linked Dynamic Structure](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue/original-queue/dynamic-linked-queue)
+
 	
 
 ### Operations
