@@ -39,11 +39,11 @@ int status(Client c){
 }
 
 
-//bool estprime(Client c){
-//	return (c.status_ == 1);
-//}
-//bool estclassique(Client c){
-//	return (c.status_ == 0);
-//}
+bool estprime(Client c){
+	return (c.status_ == 1);
+}
+bool estclassique(Client c){
+	return (c.status_ == 0);
+}
 
 

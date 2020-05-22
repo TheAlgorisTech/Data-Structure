@@ -30,5 +30,5 @@ void printClient(Client c);
 char nom(Client c);
 char prenom(Client c);
 int status(Client c);
-//bool estprime(Client c);
-//bool estclassique(Client c);
+bool estprime(Client c);
+bool estclassique(Client c);
