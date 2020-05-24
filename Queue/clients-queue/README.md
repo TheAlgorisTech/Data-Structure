@@ -48,3 +48,6 @@ last)
 - lgp: which returns the number of priority clients in the queue
 - lgc: which returns the number of classic clients in the queue
 - sup: which removes the customer at the head of the queue
+
+
+[//]:(Unfinished last four operations)
