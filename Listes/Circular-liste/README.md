@@ -6,7 +6,9 @@ Linked list where all nodes are connected to form a circle. There is no NULL at 
 
 
 ## Contents Table
-
+1. [Circular Linked List](https://github.com/Fayssal404/Data-Structure/tree/master/Listes/Circular-liste/circular-list)
+2. [Circular Doubly Linked List](#)
+3. [Mancala Game](https://github.com/Fayssal404/Data-Structure/tree/master/Listes/Circular-liste/mancala-game)
 
 ### Circulat Linked Lists Pros
 - Any node can be a starting point
