@@ -1,4 +1,4 @@
-# Data-Sctructure
+# Data-Structure
 
 Changing the data structure does not change the correctness of the program, because we replace a correct implementation with a different correct implementation. Data type realizes different 
 tradeoffs in the time to execute different operations, to improve
