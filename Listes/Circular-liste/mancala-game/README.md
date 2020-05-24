@@ -4,7 +4,7 @@ The game board is composed of 2 rows of 6 fields (or holes) which contain seeds
 to which are added two special fields: the attics (or houses) of the players.
 Each player has one of the two rows. The score of a player corresponds to the total number of seeds in the fields in its row.
 
-![gif]()
+![gif](http://ehess.modelisationsavoirs.fr/marc/publi/awele/images/piege.gif)
 
 ### Rules
 If the fields are numbered counterclockwise from the left (see also
