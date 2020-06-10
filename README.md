@@ -5,11 +5,9 @@ tradeoffs in the time to execute different operations, to improve
 the performance dramatically.
 
 # Contents Tables
-__1. Containers__
-
-   1. [Stack](https://github.com/Fayssal404/Data-Sctructure/tree/master/Stacks)
-   2. [Queue](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue)
-
+   1. [Stacks Data Structures](https://github.com/Fayssal404/Data-Sctructure/tree/master/Stacks)
+   2. [Queue Data Structures](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue)
+   3. [List Data Structures](https://github.com/TheAlgorisTech/Data-Structure/tree/master/Listes)
 
 
 __References:__
