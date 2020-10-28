@@ -1,11 +1,15 @@
 # Graph 
 
+![gif](https://cdn-images-1.medium.com/max/1600/1*heR0By4G5GbpJ6ZaftJLRQ.gif)
+
 - Graphs are important because they can be used to represent essentially any relationship
 	- Transportation systems
 	- Human interactions
 	- Telecomunication networks
 	- Electronic circuits
 - Trees are restricted types of graphs
+
+
 
 ## 1. Graph Theory
 - Provides a language for talking about the properties of relationships
@@ -17,7 +21,7 @@
 		- Ordered/unordered pairs of vertices from V
 		- Can connect two nodes in any possible way
 
-
+<!---
 | Types of Graph | Description |
 | :------------- | ----------: |
 |	 Null    | No edges in the graph |
@@ -31,17 +35,27 @@
 | Cyclic |  <ul><li>Contains at least one cycle</li><li>Opposit to acyclis graphs</li></ul>|
 | Directed Asyclic (DAG) | <ul><li>Arise naturally in scheduling problems</li><li>Directed graph with no cycle</li></ul>|
 | Labeled/Unlabeled | Each vertex is assigned a unique name |
-
+--->
 
 ## 2. Graph data structure
+Two basic choices are
+   - Adjacency matrices
+   - Adjacency lists
+ 
+### 2.1 Adjacency Matrix
+  - Graph repsented with a matrix M
+  - Faster to test if a relation exist in graph G
+  - Edge insertion/deletion with constant time complexity O(1)
+  - Use excessive space for graphs with many vertices & relatively few edges
 
-
-
-
-
-
-
-
+### 2.2 Adjacency Lists
+ - Represent sparse graphs by using *linked lists*
+ - Require pointers
+ - They are the right data structure for most applications of graphs
+ - Faster to find the defre of a vertex than Adjacency matrix
+ - Less memory on small graphs
+ - Faster to traverse graph $O(m+n)$ vs $O(n^2)$ for Adjacency matrix
+ - Makes it harder to verify whether a given edge belong to graph G
 
 
 
