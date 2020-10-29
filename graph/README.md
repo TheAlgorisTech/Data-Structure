@@ -1,5 +1,6 @@
 # Graph 
 
+- Non-linear data structure consisting of nodes and edges
 - Graphs are important because they can be used to represent essentially any relationship
 	- Transportation systems
 	- Human interactions
@@ -17,6 +18,7 @@
 		- Ordered/unordered pairs of vertices from V
 		- Can connect two nodes in any possible way
 
+- Notation (u,v) indicates that there is an edge from vertex u to vertex v
 
 | Types of Graph | Description |
 | :------------- | ----------: |
