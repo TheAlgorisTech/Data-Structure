@@ -25,4 +25,5 @@ The structure used to designate a node in the tree is composed of the following 
 - An attribute to know if the word formed from the root to the current node is a dictionary word
 
 
-
+##### A sort representing the words PI, PIE, FOOT, PORT, PIG and BRIDGE. The nodes of the tree that are double circled are the words belonging to the dictionaries
+![](./screenshots/word-tree.png)
