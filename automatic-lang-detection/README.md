@@ -31,6 +31,14 @@ __Pros:__
 
 __Cons:__
 - Require huge memory for storing the strings
+- Trie lookup can be slower than hash table lookup
+- Some keys, such as floating point numbers, can lead to long chains and prefixes that are not particularly meaningful
 
 ##### A sort representing the words PI, PIE, FOOT, PORT, PIG and BRIDGE. The nodes of the tree that are double circled are the words belonging to the dictionaries
 ![](./screenshots/word-tree.png)
+
+__Operations:__
+- Insert inserts a string (the key) and a value into the trie
+- Find returns the value for a key string
+
+__Unlike a binary search tree, no node in the tree stores the key associated with that node; instead, its position in the tree defines the key with which it is associated__
