@@ -18,12 +18,19 @@ In order to solve the problem of automatic language detection, a dictionary matc
 4. Language of the text is the language with the highest number of positive matches
 
 ### 3. Data Structure
-A sort, sometimes called a prefix tree, is a tree-like data structure that allows the storage of strings. Often used for the implementation of an associative table, a slightly modified form of the sort will be used in order to store dictionaries as well as possible.
+#### 3.1 Trie (pefix tree)
+A __Trie__, sometimes called a __prefix tree__, is a tree-like data structure that allows the storage of strings. Often used for the implementation of an associative table, a slightly modified form of the sort will be used in order to store dictionaries as well as possible.
 
 The structure used to designate a node in the tree is composed of the following elements:
 - An array of pointers to its wires, size 26 (for letters from a to z). A box i of this array is a pointer to its child node if it is possible to continue a word with the clue letter i from the prefix encoded by the current node, or a NULL pointer otherwise
 - An attribute to know if the word formed from the root to the current node is a dictionary word
 
+__Pros:__
+- Finds & search strings in O(L) where L is length of single words
+- Facilate printing words in alphabet order
+
+__Cons:__
+- Require huge memory for storing the strings
 
 ##### A sort representing the words PI, PIE, FOOT, PORT, PIG and BRIDGE. The nodes of the tree that are double circled are the words belonging to the dictionaries
 ![](./screenshots/word-tree.png)
