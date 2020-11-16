@@ -53,17 +53,11 @@ Otherwise:
 ```
 
 ### Tree Traversals
-
-There are several different orders in which the nodes may be traversed:
-	- pre-order
-	- in order
-	- post-oreder
-	- breadth-first	
+Traversal is when all of the nodes in a tree are examined. There are several different orders in which the nodes may be traversed:
+	- pre-order: examines value in the node & then recursively traverses the left & right subtrees
+	- in order: traverses left subtree, then examines the value in the node and traverses the right subtree last
+	- post-order: traverses the left and right subtrees first and examines the node's value last
+	- breadth-first: examines the nodes of the tree level by level	
 All traversals start at the root of the tree
 
 
-## Pros 
-- Have no duplicate values in the tree
-- Fast locating of data using a key
-
-## Cons
