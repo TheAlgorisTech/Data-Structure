@@ -4,10 +4,24 @@ Changing the data structure does not change the correctness of the program, beca
 tradeoffs in the time to execute different operations, to improve
 the performance dramatically.
 
-# Contents Tables
+# Contents Table
+
+## 1. Stacks data structure 
    1. [Stacks Data Structures](https://github.com/Fayssal404/Data-Sctructure/tree/master/Stacks)
+
+## 2. Queue data strcuture
    2. [Queue Data Structures](https://github.com/Fayssal404/Data-Sctructure/tree/master/Queue)
+
+## 3. Linked list
    3. [List Data Structures](https://github.com/TheAlgorisTech/Data-Structure/tree/master/Listes)
+
+## 4. Tree data structure
+
+## 5. Graph data structure
+
+## 6. Sorting algorithms
+
+
 
 
 __References:__
