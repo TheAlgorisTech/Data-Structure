@@ -4,9 +4,23 @@ The value in each node is greater than all of the values in its left subtree & l
 
 - Each node in the tree has exactly one parent
 - Topmost node is called the *root*
-- Nodes without children are called *leaf nodes* (a.k.a leaves)
+- Nodes without children are called *leaf nodes* (a.k.a leafes)
 
 ![gif](http://108.61.119.12/wp-content/uploads/2014/10/binary-tree-1-search.gif)
+
+## Properties
+- The maximum number of nodes at any level is $2^{level}$
+- The maximum number of nodes of height *h* is $\sum_{i=0}^{h}2^i$ (Geometric series)
+- The minimum number of nodes of height h is $h+1$
+- Given maximum number of nodes the minimum height of tree is $h=\lceil log_2(h+1)-1 \rceil$
+- Given minmum number of nodes the maximum height of tree is $h=\rmtext{number of nodes} - 1$
+
+## Binary tree types
+
+| Type | Description | Max nodes | Min nodes | Min height | Max height |
+| :--- | :---------: | :-------: | :-------: | :--------: | ---------: |
+| Full/proper/strict | Nodes cotaines either 0 or 2 children| 2^h-1 | 2h+1 | log_2(h+1
+
 
 
 ## Operations
