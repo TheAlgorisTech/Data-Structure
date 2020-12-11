@@ -50,9 +50,9 @@ Otherwise:
 ### Deletion
 - Deleting a node from the middle of the tree require connecting it's subtrees to the rest of the tree
 - There is three cases:
-				- Deleting node with no children
-				- Deleting node with one child
-				- Deleting node with two child
+	- Deleting node with no children
+	- Deleting node with one child
+	- Deleting node with two child
 
 
 ### Searching
@@ -73,10 +73,12 @@ Otherwise:
 
 ### Tree Traversals
 Traversal is when all of the nodes in a tree are examined. There are several different orders in which the nodes may be traversed:
-	- pre-order: examines value in the node & then recursively traverses the left & right subtrees
-	- in order: traverses left subtree, then examines the value in the node and traverses the right subtree last
-	- post-order: traverses the left and right subtrees first and examines the node's value last
-	- breadth-first: examines the nodes of the tree level by level	
-All traversals start at the root of the tree
+
+- pre-order: examines value in the node & then recursively traverses the left & right subtrees
+- in order: traverses left subtree, then examines the value in the node and traverses the right subtree last
+- post-order: traverses the left and right subtrees first and examines the node's value last
+- breadth-first: examines the nodes of the tree level by level	
+
+__All traversals start at the root of the tree__
 
 
