@@ -3,10 +3,11 @@
 Tree is a non-linear **Data Structure**. Tree can be defined as a collection of nodes linked together to simulate a hierarchy. 
 
 Trees are used to implement:
-				- File system
-				- Routing protocols 
-				- Quick search
+- File system
+- Routing protocols 
+- Quick search
 
+-----------------------------
 
 | Tree type | Implementation |
 | :-------- | -------------: |
