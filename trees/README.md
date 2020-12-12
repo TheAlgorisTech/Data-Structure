@@ -11,7 +11,7 @@ Trees are used to implement:
 
 | Tree type | Implementation |
 | :-------- | -------------: |
-| ![Binary](https://github.com/TheAlgorisTech/Data-Structure/tree/master/trees/binary-trees) 		|  Linked list   |
+| ![Binary Search Trees](https://github.com/TheAlgorisTech/Data-Structure/tree/master/trees/binary-trees/binary-search-tree) 		|  Linked list   |
 
 
 
