@@ -1,6 +1,10 @@
 # Graph adjacency lists
 
 
+| Type | Size |
+| :--- | ----:|
+| Adjacency List | Dynamic |
+| Adjacency List | Static |
 
 
 ## Adjacency Lists
