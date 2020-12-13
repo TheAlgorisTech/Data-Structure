@@ -46,7 +46,6 @@ int isempty(BinTree *tree)
 
 BinTree *insertNode(BinTree *tree, int v)
 {
-	  
 	/*
 	 * Insert node to a tree
 	 *

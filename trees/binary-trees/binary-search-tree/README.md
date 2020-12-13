@@ -8,6 +8,13 @@ The value in each node is greater than all of the values in its left subtree & l
 ![gif](http://108.61.119.12/wp-content/uploads/2014/10/binary-tree-1-search.gif)
 
 
+## Properties
+- There $n!$ **BST** for $n$ keys
+
+
+## Drawback
+- There is multiple **BST** with various hieght from the same set of keys inserted in different order
+
 
 ## Operations
 
@@ -51,3 +58,24 @@ Otherwise:
 								Otherwise:
 												search right subtree
 ```
+
+
+
+## Complexity
+- Most of the **BST** operations takes $O(h)$ time
+- Cost of operations can become $O(n)$ where n is the number of nodes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
