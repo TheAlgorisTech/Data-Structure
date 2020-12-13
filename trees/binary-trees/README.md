@@ -1,9 +1,10 @@
-# Binary Search Tree
+# Binary Search Tree (BST)
 Binary tree is a specialized form of tree in which each node has at most two children, named left & right.
 
 - Each node in the tree has exactly one parent
 - Topmost node is called the *root*
 - Nodes without children are called *leaf nodes* (a.k.a leafes)
+- Duplicating elements are not allowed in **BST**
 
 
 ## Properties
@@ -26,12 +27,6 @@ Binary tree is a specialized form of tree in which each node has at most two chi
 - __Every perfect binary tree can be complete and full binary tree__
 - __Degenerate binary tree is a.k.a left (resp. right) skewed binary tree when it only contains left (resp. right) nodes__
 
-
-## Operations
-
-### Insertion
-
-### Deletion
 
 ### Tree Traversals
 Traversal is when all of the nodes in a tree are examined. There are several different orders in which the nodes may be traversed:
