@@ -5,6 +5,8 @@
  
 // Nombre Maximal des vertices dans un Graphe 
 #define GRAPH_MAX_SIZE 6
+#define TRUE 1
+#define FALSE 0
  
 
 
@@ -195,7 +197,7 @@ struct Graph *addUnDirectedEdge(struct Graph *graph, int src,int dest)
  *
  */
 
-struct Graph *DeleteVertex(struct Graph *graph,int v1)
+struct Graph *deleteVertex(struct Graph *graph,int v1)
 {
     for(int idx=0; idx < GRAPH_MAX_SIZE; idx++)
     {
@@ -223,13 +225,49 @@ struct Graph *DeleteVertex(struct Graph *graph,int v1)
 
 
 /* 
- * @brief remove edge between two vertex from graph
+ * @brief remove edge between two vertex in directed graph
  *
- * @param[in] Vertex v1, Vertex v2 
+ * @param[in] Vertex src, Vertex dest
  * @param[out] Graph
- * @return Graph where v1 and v2 are disconnected
+ * @return Graph where src and dest are disconnected
+ */
+
+struct Graph *deleteDEdge(struct Graph *graph, int src, int dest)
+{
+    struct Vertex *header = graph->AdjList[src];
+    // Check if edge exist between src and dest
+    while (header != NULL)
+    { 
+        if ( header->value == dest)
+        {
+            graph->AdjList[src] = header->next;
+            return graph;
+        }
+        header = header->next;
+        
+    }
+
+    return graph;
+}
+
+
+/* 
+ * @brief remove edge between two vertex in undirected graph
  *
- * Graph supa(Vertex v1, Vertex v2){}*/
+ * @param[in] Vertex src, Vertex dest
+ * @param[out] Graph
+ * @return Graph where src and dest are disconnected
+ */
+
+struct Graph *deleteUEdge(struct Graph *graph, int src, int dest)
+{
+
+    // Delete undirected edge
+    struct Graph *graph1 = deleteDEdge(graph, src, dest);
+    return deleteDEdge(graph1, dest, src);
+            
+}
+
 
 
 /* 
@@ -248,21 +286,55 @@ struct Graph *DeleteVertex(struct Graph *graph,int v1)
  * @param[in] Vertex v1, Vertex v2 
  * @param[out] bool 
  * @return true if edge exist between v1 and v2 otherwise false
- *
- * Graph exa(Vertex v1, Vertex v2){}*/
+ */
+
+
+int existEdge(struct Graph *graph, int src, int dest)
+{
+    struct Vertex *header = graph->AdjList[src];
+
+    while(header != NULL)
+    {
+        if (header->value == dest) return TRUE;
+        header = header->next;
+    }
+    return FALSE;
+}
 
 
 
 /* 
  * @brief compute internal degree of a vertex 
+ * @details count number of edges received by a vertex
  *
- * @param[in] Vertex v 
+ * @param[in] Vertex src
  * @param[out] int 
- * @return number of edges received by vertex v 
- *
- * Graph di(Vertex v){}*/
+ * @return number of edges received by vertex src 
+ */
 
 
+int internalDegree(struct Graph *graph, int src)
+{
+    int degree=0;
+    for (int idx = 0; idx < GRAPH_MAX_SIZE; idx ++)
+    {
+        if (idx == src) continue;
+        struct Vertex *header = graph->AdjList[idx];
+        while (header != NULL)
+        {
+            if (header->value == src)
+            {
+                degree +=1;
+                break;
+            }
+            header = header->next;
+        }
+
+    }
+
+    return degree;
+
+}
 
 
 /* 
@@ -272,9 +344,21 @@ struct Graph *DeleteVertex(struct Graph *graph,int v1)
  * @param[out] int 
  * @return number of edges that goes out from vertex v 
  *
- * Graph de(Vertex v){}*/
+ */
 
+int externalDegree(struct Graph *graph, int src)
+{
+    int degree=0;
 
+    struct Vertex *header = graph->AdjList[src];
+
+    while (header != NULL) 
+    {
+        degree += 1;
+        header = header->next;
+    }
+    return degree;
+}
 
 /*
  * @brief print graph presentation
@@ -310,12 +394,15 @@ int main(void)
     printGraph(graph);
 
 
-    graph = addDirectedEdge(graph, 1,5);
-
-    printf("Adding undirected edge from 2 to 5");
+    printf("Adding undirected edge from 2 to 5\n");
     graph = addUnDirectedEdge(graph, 2,5);
     printGraph(graph);
 
+    printf("Deleting undirected edge between 2 and 5\n");
+    printGraph(deleteUEdge(graph, 2, 5));
+
+    printf("Internal degree of vertex %d is %d\n", 5, internalDegree(graph, 5));
+    printf("External degree of vertex %d is %d\n", 5, externalDegree(graph, 5));
 
     return EXIT_SUCCESS;
 }
