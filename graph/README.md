@@ -76,3 +76,28 @@ __Notation (u,v) indicates that there is an edge from vertex u to vertex v__
 | :-------- | -------------: |
 |  BFS			|				-				 |
 |  DFS 			|				-				 |-->
+
+
+
+## Detect cycle in directed graph
+- Use **STACK** data structure
+	- insert vertex if not visited
+	- pop out vertex if dead end vertex
+- Use flag to mark if a vertex is visited or not
+	- -1 univisited
+	- 0 visited & in **STACK**
+	- 1 visited & popped out from **STACK**
+- Use visited set
+
+
+- Use parent map (map each vertex to it's parent)
+```
+struct VertexMapParent {
+		struct Vertex child;
+		struct Vertex Parent;
+	}
+```
+
+## Detect cycle undirected graph
+- Use **QUEUE** data structure
+
