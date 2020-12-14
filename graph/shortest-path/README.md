@@ -12,13 +12,13 @@
 ## Algorithm
 - Create a shortest path tree set that keeps track of vertices included in shortest path tree
 - Assign distance value to all vertices in the input graph
-				- Initialize all distance values as **INIFINITE**
-				- Assign distance value as 0 for the source vertex
+	- Initialize all distance values as **INIFINITE**
+	- Assign distance value as 0 for the source vertex
 - While set created in step 1 doesn't include all vertices
-				- Pick a vertex *u* not included in the set and has minimum distance value
-				- Include *u* to the set
-				- Update all instance values, iterate through all adjacent vertices.
-								- For every adjacent vertex *v* apply, if sum of distance value of u (from source) & weight of edge *u-v*, is less than the distance value of *v*, then update the distance value of *v* **Relaxation**
+	- Pick a vertex *u* not included in the set and has minimum distance value
+	- Include *u* to the set
+	- Update all instance values, iterate through all adjacent vertices
+	- For every adjacent vertex *v* apply, if sum of distance value of u (from source) & weight of edge *u-v*, is less than the distance value of *v*, then update the distance value of *v* **Relaxation**
 
 
 ## Complexity
