@@ -22,8 +22,3 @@ the performance dramatically.
 ## 6. Sorting algorithms
 
 
-
-
-__References:__
-- Steven S.Skiena, *The algorithm design manual*, Springer-Verlag-London 2008
-
