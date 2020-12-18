@@ -32,7 +32,7 @@ TrieArbre *arbre_vide(void);
 /// @param cles The key to be inserted in the Trie.
 /// @return On success return AbreTrie with additional key.
 ///
-/// Note that the key or the Trie  must not be empty, and
+/// Note that the key or the Trie  must not be empty
 TrieArbre *insert(TrieArbre *racine, const char *cles);
 
 /// @brief Check if a key belong to the Trie.
