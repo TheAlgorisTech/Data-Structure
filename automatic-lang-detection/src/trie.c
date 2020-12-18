@@ -4,12 +4,7 @@
  *       Filename:  trie.c
  *
  *    Description:  Implémentation de la structure Trie :
- *    		    vous devez proposer une implémentation complète de la structure
- *    		    d’arbre Trie contenant les fonctions d’initialisation,
- *    		    d’insertion d’un élément dans l’arbre, et de recherche d’un mot
  *
- *         Author:  Algoristech
- *   Organization:  
  *
  * =====================================================================================
  */
@@ -55,8 +50,6 @@ TrieArbre *insert(TrieArbre *racine, const char *cles)
 	TrieArbre *tcrawl=racine;
 
 	/* Remove all char from given string that aren't a-z parse_work(char *word) */
-
-
 	for (int level=0; level < taille; level++)
 	{
 		/*Change ASCCI char (a-z) to array index */
@@ -72,6 +65,7 @@ TrieArbre *insert(TrieArbre *racine, const char *cles)
   } 
    	// mark last node as leaf 
    	tcrawl->finNoeud = true; 
+		return racine;
 } 
 
 // Returns true if key presents in trie, else false 
@@ -93,24 +87,6 @@ bool search(TrieArbre *racine, const char *cles)
   
     return (pCrawl != NULL && pCrawl->finNoeud); 
 } 
-
-
-
-
-int main(){
-
-	TrieArbre *tree = arbre_vide();
-	insert(tree, "faysal");
-
-	bool exist = search(tree,"faysal");
-
-	if (exist) printf("found value in tree");
-
-	
-
-	return EXIT_SUCCESS;
-
-}
 
 
 
